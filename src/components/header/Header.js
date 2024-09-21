@@ -24,7 +24,6 @@ const Header = () => {
     });
   }, [ref, showAll]);
 
-
   return (
     <div className="sticky top-0 z-50">
       <div className="w-full bg-amazon_blue text-white px-4 py-3 flex md:justify-between items-center gap-2 md:gap-4 lgl:gap-2 xl:gap-4">
@@ -41,7 +40,7 @@ const Header = () => {
           <p className="flex flex-col text-xs text-lightText font-light">
             Deliver to{" "}
             <span className="text-sm font-semibold -mt-1 text-whiteText">
-              Oman
+              Bangladesh
             </span>
           </p>
         </div>
@@ -87,11 +86,8 @@ const Header = () => {
         {/* ===================== Header Signin Start here ======================== */}
         <Link to="/signin">
           <div className="flex flex-col items-start justify-center headerHover">
-           
-              <p className="text-xs text-lightText font-light">
-                Hello, sign in
-              </p>
-           
+            <p className="text-xs text-lightText font-light">Hello, sign in</p>
+
             <p className="hidden md:inline-flex text-sm font-semibold -mt-1 text-whiteText">
               Accounts & Lists{" "}
               <span>
@@ -120,10 +116,7 @@ const Header = () => {
           </div>
         </Link>
         {userInfo && (
-          <div
-            
-            className="flex flex-col justify-center items-center headerHover relative"
-          >
+          <div className="flex flex-col justify-center items-center headerHover relative">
             <LogoutIcon />
             <p className="hidden mdl:inline-flex text-xs font-semibold text-whiteText">
               Log out
